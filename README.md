@@ -6,7 +6,7 @@ Learning more about Javascript – articles, useful resources, personal notes.
 
 ### Promises
 
-* [MDN › Javascript Guides › Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+* [MDN › Javascript Guides › Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) All about their guarantees, chaining them, error propagation, composition, timing (passed-in functions are put on microtask queue, they never run immediately), nesting and common mistakes
 * Remember: `then()` expects a *function*; that returns either a `Promise`; a scalar; or throws ([We have a problem with promises — Common mistakes with promises](https://t.co/rZyuKREaUW), Nolan Lawson, 18.05.2015)
 
 ### Iteration protocols
