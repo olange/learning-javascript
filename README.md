@@ -9,6 +9,13 @@ Learning more about Javascript – articles, useful resources, personal notes.
 * [MDN › Javascript Guides › Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) All about their guarantees, chaining them, error propagation, composition, timing (passed-in functions are put on microtask queue, they never run immediately), nesting and common mistakes
 * Remember: `then()` expects a *function* (or two); that returns either a `Promise`; a scalar; or throws ([We have a problem with promises — Common mistakes with promises](https://t.co/rZyuKREaUW), Nolan Lawson, 18.05.2015)
 
+### Observables / RXJS
+
+* [Observable](https://rxjs-dev.firebaseapp.com/guide/observable)
+* Observer
+* Subscription
+* Subject
+
 ### Iteration protocols
 
 * [Iterable protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol) To be iterable, an object must implement the `@@iterator` method — meaning that the object (or one of the objects up its [prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain)) must have a property with a `@@iterator` key, which is available via constant [`Symbol.iterator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator). The method `@@iterator` is a zero arguments function, that returns an object, conforming to the [iterator protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol). (ES2015)
