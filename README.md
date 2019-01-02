@@ -4,14 +4,26 @@ Learning more about Javascript – articles, useful resources, personal notes.
 
 ## Quick reference
 
+### Pull vs Push
+
+Pull and Push are two different protocols that describe how a data _Producer_ can communicate with a data _Consumer_.
+
+* In **Pull** systems, the _Consumer_ determines when it receives data from the data _Producer_. The _Producer_ itself is unaware of when the data will be delivered to the _Consumer_.
+* In **Push** systems, the _Producer_ determines when to send data to the _Consumer_. The _Consumer_ is unaware of when it will receive that data.
+
+|   |	Single value	| Multiple values |
+|---|---|---|
+| [Pull](https://rxjs-dev.firebaseapp.com/guide/observable#pull-versus-push) |	**[Function](https://developer.mozilla.org/en-US/docs/Glossary/Function)** |	**[Iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol)** |
+| [Push](https://rxjs-dev.firebaseapp.com/guide/observable#pull-versus-push) |	**[Promise](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Promise)** | **[Observable](https://rxjs-dev.firebaseapp.com/guide/observable)** |
+
 ### Promises
 
 * [MDN › Javascript Guides › Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) All about their guarantees, chaining them, error propagation, composition, timing (passed-in functions are put on microtask queue, they never run immediately), nesting and common mistakes
 * Remember: `then()` expects a *function* (or two); that returns either a `Promise`; a scalar; or throws ([We have a problem with promises — Common mistakes with promises](https://t.co/rZyuKREaUW), Nolan Lawson, 18.05.2015)
 
-### Observables / RXJS
+### Observables / RxJS
 
-* [Observable](https://rxjs-dev.firebaseapp.com/guide/observable)
+* [Observable](https://rxjs-dev.firebaseapp.com/guide/observable) Observables are lazy push collections of multiple values `const observable = Observable.create( function (observer) { … })`
 * Observer
 * Subscription
 * Subject
