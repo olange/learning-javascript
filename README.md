@@ -8,13 +8,10 @@ Learning more about Javascript – articles, useful resources, personal notes.
 
 Pull and Push are two different protocols that describe how a data _Producer_ can communicate with a data _Consumer_.
 
-* In **Pull** systems, the _Consumer_ determines when it receives data from the data _Producer_. The _Producer_ itself is unaware of when the data will be delivered to the _Consumer_.
-* In **Push** systems, the _Producer_ determines when to send data to the _Consumer_. The _Consumer_ is unaware of when it will receive that data.
-
-|   |	Single value	| Multiple values |
-|---|---|---|
-| [Pull](https://rxjs-dev.firebaseapp.com/guide/observable#pull-versus-push) |	**[Function](https://developer.mozilla.org/en-US/docs/Glossary/Function)** |	**[Iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol)** |
-| [Push](https://rxjs-dev.firebaseapp.com/guide/observable#pull-versus-push) |	**[Promise](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Promise)** | **[Observable](https://rxjs-dev.firebaseapp.com/guide/observable)** |
+| System |	Single value	| Multiple values | Description |
+|---|---|---|---|
+| [Pull](https://rxjs-dev.firebaseapp.com/guide/observable#pull-versus-push) |	**[Function](https://developer.mozilla.org/en-US/docs/Glossary/Function)** |	**[Iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol)** | The _Consumer_ determines when it receives data from the data _Producer_. The _Producer_ itself is unaware of when the data will be delivered to the _Consumer_. |
+| [Push](https://rxjs-dev.firebaseapp.com/guide/observable#pull-versus-push) |	**[Promise](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Promise)** | **[Observable](https://rxjs-dev.firebaseapp.com/guide/observable)** | The _Producer_ determines when to send data to the _Consumer_. The _Consumer_ is unaware of when it will receive that data. |
 
 ### Promises
 
@@ -23,10 +20,12 @@ Pull and Push are two different protocols that describe how a data _Producer_ ca
 
 ### Observables / RxJS
 
-* [Observable](https://rxjs-dev.firebaseapp.com/guide/observable) Observables are lazy push collections of multiple values `const observable = Observable.create( function (observer) { … })`
-* Observer
-* Subscription
-* Subject
+* [`Observable`](https://rxjs-dev.firebaseapp.com/guide/observable) Observables are lazy push collections of multiple values. Represent the idea of an invokable collection of future values or events. `const observable = Observable.create( function (observer) { … })`
+* `Observer` – a collection of callbacks that knows how to listen to values delivered by the Observable.
+* `Subscription` – represents the execution of an Observable, is primarily useful for cancelling the execution.
+* `Subject` – the equivalent to an `EventEmitter`, and the only way of multicasting a value or event to multiple Observers.
+* Operator – pure function that enables a functional programming style of dealing with collections, with operations like `map`, `filter`, `concat`, `reduce`, …
+* `Scheduler` – centralized dispatchers to control concurrency, allowing to coordinate when computation happens, on e.g. `setTimeout` or `requestAnimationFrame` or others.
 
 ### Iteration protocols
 
