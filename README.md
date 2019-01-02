@@ -20,8 +20,8 @@ Pull and Push are two different protocols that describe how a data _Producer_ ca
 
 ### Observables / RxJS
 
-* [`Observable`](https://rxjs-dev.firebaseapp.com/guide/observable) Observables are lazy push collections of multiple values. Represent the idea of an invokable collection of future values or events. `const observable = Observable.create( function (observer) { … })`
-* `Observer` – a collection of callbacks that knows how to listen to values delivered by the Observable.
+* [`Observable`](https://rxjs-dev.firebaseapp.com/guide/observable) Observables are lazy push collections of multiple values. Represent the idea of an invokable collection of future values or events. `const observable = Observable.create( function (observer) { … })` The code of the ellipsis represents an _Observable execution_, a lazy computation that only happens for each `Observer` that subscribes. The execution produces multiple values over time, either synchronously or asynchronously.
+* `Observer` – a collection of callbacks, that knows how to listen to values delivered by the Observable. Is an object with methods `next( value)`, `error( err)`, `complete()`. `observable.subscribe( observer)` is the way to start an _Observable execution_ and deliver values or events to the Observer of that execution.
 * [`Subscription`](https://rxjs-dev.firebaseapp.com/guide/subscription) – an object that represents a disposable resource, usually the execution of an `Observable`; is primarily useful for cancelling the execution. Has one important method, `unsubscribe()`, that takes no argument and just disposes the resource held by the subscription.
 * [`Subject`](https://rxjs-dev.firebaseapp.com/guide/subject) – a special type of Observable, that allows values to be _multicasted_ to many Observers. While plain Observables are _unicast_ — each subscribed `Observer` owns an _independent execution_ of the `Observable` —, Subjects are _multicast_. The equivalent to an `EventEmitter`.
 * Operator – pure function that enables a functional programming style of dealing with collections, with operations like `map`, `filter`, `concat`, `reduce`, …
