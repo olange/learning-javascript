@@ -22,7 +22,7 @@ Pull and Push are two different protocols that describe how a data _Producer_ ca
 
 * [`Observable`](https://rxjs-dev.firebaseapp.com/guide/observable) Observables are lazy push collections of multiple values. Represent the idea of an invokable collection of future values or events. `const observable = Observable.create( function (observer) { … })`
 * `Observer` – a collection of callbacks that knows how to listen to values delivered by the Observable.
-* `Subscription` – represents the execution of an Observable, is primarily useful for cancelling the execution.
+* [`Subscription`](https://rxjs-dev.firebaseapp.com/guide/subscription) – an object that represents a disposable resource, usually the execution of an `Observable`; is primarily useful for cancelling the execution. Has one important method, `unsubscribe()`, that takes no argument and just disposes the resource held by the subscription.
 * `Subject` – the equivalent to an `EventEmitter`, and the only way of multicasting a value or event to multiple Observers.
 * Operator – pure function that enables a functional programming style of dealing with collections, with operations like `map`, `filter`, `concat`, `reduce`, …
 * `Scheduler` – centralized dispatchers to control concurrency, allowing to coordinate when computation happens, on e.g. `setTimeout` or `requestAnimationFrame` or others.
