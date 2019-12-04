@@ -4,6 +4,10 @@ Learning more about Javascript – articles, useful resources, personal notes.
 
 ## Quick reference
 
+### Fundamentals
+
+* [Mathias Bynens › Notes on `globalthis`](https://mathiasbynens.be/notes/globalthis)
+
 ### Pull vs Push
 
 Pull and Push are two different protocols that describe how a data _Producer_ can communicate with a data _Consumer_.
