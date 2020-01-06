@@ -8,6 +8,7 @@ Learning more about Javascript – articles, useful resources, personal notes.
 
 * [2ality › Global scope](https://2ality.com/2019/07/global-scope.html) _How do JavaScript’s global variables really work? All about_ scopes, lexical environments, global object, global environment, module environments
 * [Mathias Bynens › Notes on `globalthis`](https://mathiasbynens.be/notes/globalthis)
+* [Tips for common idioms](TIPS.md) _accessing property values while protecting from inexistent properties, and suggestions for other day-to-day idioms_
 
 ### Pull vs Push
 
