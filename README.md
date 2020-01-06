@@ -47,6 +47,12 @@ Pull and Push are two different protocols that describe how a data _Producer_ ca
 * **[`yield`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield) keyword** is used to pause and resume a [generator function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) (`function*`). `[rv] = yield [expression];` _expression_ defines the value to return from the generator function via the iterator protocol; _rv_ returns the optional value passed to the generator's `next()` method to resume its execution. (ES2015)
 * **[`yield*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*) expression** is used to delegate to another [generator function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) or [iterable object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol). `yield* [[expression]];` _expression_ is the expression that returns an iterable object. (ES2015)
 
+### State and event propagation
+
+* [Westbrook Johnson › `composed: true` considered harmful?](https://dev.to/open-wc/composed-true-considered-harmful-5g59) _Detailed description of event propagation and description of a pattern for event propagation with state — which I would not recommend & adopt, yet it is an excellent article to learn the topic_
+* [Open WC › Managing events in your custom elements](https://open-wc.org/faq/events.html) _Patterns for listening and dispatching events in the context of Web Components_
+* [Peter Caisse › Modeling State with TypeScript](https://www.azavea.com/blog/2019/12/12/modeling-state-with-typescript/)
+
 ### Streams
 
 * [Learning using Streams, Observables and Transforms](https://github.com/olange/learning-streams/) articles, useful resources, personal notes
