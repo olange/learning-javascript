@@ -9,7 +9,7 @@ Learning more about Javascript – articles, useful resources, personal notes.
 * [Tips for common idioms](TIPS.md) _accessing property values while protecting from inexistent properties, and suggestions for other day-to-day idioms_
 * [2ality › Global scope](https://2ality.com/2019/07/global-scope.html) _How do JavaScript’s global variables really work? All about_ scopes, lexical environments, global object, global environment, module environments
 * [Mathias Bynens › Notes on `globalthis`](https://mathiasbynens.be/notes/globalthis)
-* [Lydia Hallie › JavaScript Visualized: Prototypal Inheritance](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co)
+* [Lydia Hallie › JavaScript Visualized: Prototypal Inheritance](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co) _The infamous prototypal inheritance of Javascript presented in a step-by-step tutorial, with animated illustrations of property access_
 
 ### Pull vs Push
 
@@ -51,7 +51,7 @@ Pull and Push are two different protocols that describe how a data _Producer_ ca
 
 * [Westbrook Johnson › `composed: true` considered harmful?](https://dev.to/open-wc/composed-true-considered-harmful-5g59) _Detailed description of event propagation and description of a pattern for event propagation with state — which I would not recommend & adopt, yet it is an excellent article to learn the topic_
 * [Open WC › Managing events in your custom elements](https://open-wc.org/faq/events.html) _Patterns for listening and dispatching events in the context of Web Components_
-* [Peter Caisse › Modeling State with TypeScript](https://www.azavea.com/blog/2019/12/12/modeling-state-with-typescript/)
+* [Peter Caisse › Modeling State with TypeScript](https://www.azavea.com/blog/2019/12/12/modeling-state-with-typescript/) _TypeScript `interfaces` and `unions` allow to describe the structure of data; common schema can be modeled in `generics`; and state transitions can be modeled with `conditional types` — which allow the compiler to capture and signal errors, when state is set to unintended values, due to typo, logic error or accidental type coercions. Note: error signaling happens at_ compile time, _however clever the compiler is; those techniques would not protect from malformed data suddenly provided by an upstream source, at_ runtime, _which is another common issue in production_.
 
 ### Streams
 
